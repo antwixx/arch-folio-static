@@ -1,28 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BR Design & Architecture | Award-Winning Architectural Design in Chicago</title>
-    <meta name="description" content="BR Design & Architecture offers over 35 years of experience in residential, commercial, and healthcare architecture. From concept to concrete, we deliver award-winning designs in the Chicago area." />
-    <meta name="author" content="BR Design & Architecture" />
-    <meta name="keywords" content="architecture, architectural design, Chicago architect, residential architecture, commercial architecture, healthcare architecture, custom homes, building design" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR Design & Architecture | Award-Winning Architectural Design in Chicago</title>
+  <meta name="description" content="BR Design & Architecture offers over 35 years of experience in residential, commercial, and healthcare architecture. From concept to concrete, we deliver award-winning designs in the Chicago area.">
+  <meta name="keywords" content="architecture, architectural design, Chicago architect, residential architecture, commercial architecture, healthcare architecture, custom homes, building design">
+  
+  <meta property="og:title" content="BR Design & Architecture | Award-Winning Architectural Design">
+  <meta property="og:description" content="Over 35 years of architectural excellence. Residential, commercial, and healthcare design services in Chicago.">
+  <meta property="og:type" content="website">
+  
+  <link rel="canonical" href="https://brdesignarchitecture.com/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">BR Design</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <meta property="og:title" content="BR Design & Architecture | Award-Winning Architectural Design" />
-    <meta property="og:description" content="Over 35 years of architectural excellence. Residential, commercial, and healthcare design services in Chicago." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('/src/assets/hero-home.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Excellence in Architectural Design</h1>
+      <p>Creating innovative, sustainable, and timeless architectural solutions for over 35 years</p>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="projects.html" class="btn btn-primary">View Our Work</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BR Design & Architecture" />
-    <meta name="twitter:description" content="Award-winning architectural design with over 35 years of experience" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <link rel="canonical" href="https://brdesignarchitecture.com/" />
-  </head>
+  <!-- About Preview -->
+  <section class="container">
+    <div class="grid grid-2" style="align-items: center;">
+      <div>
+        <h2 class="section-title">From Concept to Concrete</h2>
+        <p style="color: var(--steel); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+          With over 35 years of experience, BR Design & Architecture has established itself as a trusted partner in creating exceptional architectural solutions. Our comprehensive approach encompasses everything from initial concept design to final construction documentation.
+        </p>
+        <p style="color: var(--steel); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+          We specialize in residential, commercial, and healthcare architecture, bringing innovative design thinking and meticulous attention to detail to every project.
+        </p>
+        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+      </div>
+      <div>
+        <img src="/src/assets/residential-project.jpg" alt="Architectural design" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Stats Section -->
+  <section class="section-light">
+    <div class="container">
+      <div class="stats">
+        <div>
+          <div class="stat-number">35+</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div>
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="container">
+    <div class="text-center mb-8">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle mx-auto">Explore our portfolio of award-winning architectural designs</p>
+    </div>
+    <div class="grid grid-3">
+      <a href="projects-residential.html" class="card">
+        <div class="card-image">
+          <img src="/src/assets/residential-project.jpg" alt="Residential Architecture">
+        </div>
+        <div class="card-content">
+          <p class="card-category">Residential</p>
+          <h3 class="card-title">Custom Homes</h3>
+          <p class="card-location">Luxury residential designs tailored to your lifestyle</p>
+        </div>
+      </a>
+      <a href="projects-commercial.html" class="card">
+        <div class="card-image">
+          <img src="/src/assets/commercial-project.jpg" alt="Commercial Architecture">
+        </div>
+        <div class="card-content">
+          <p class="card-category">Commercial</p>
+          <h3 class="card-title">Office Buildings</h3>
+          <p class="card-location">Innovative commercial spaces that inspire</p>
+        </div>
+      </a>
+      <a href="projects-healthcare.html" class="card">
+        <div class="card-image">
+          <img src="/src/assets/healthcare-project.jpg" alt="Healthcare Architecture">
+        </div>
+        <div class="card-content">
+          <p class="card-category">Healthcare</p>
+          <h3 class="card-title">Medical Facilities</h3>
+          <p class="card-location">Patient-centered healthcare environments</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-8">
+      <a href="projects.html" class="btn btn-primary">View All Projects</a>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-light">
+    <div class="container text-center">
+      <h2 class="section-title">Ready to Start Your Project?</h2>
+      <p class="section-subtitle mx-auto">Let's bring your architectural vision to life</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
+      <p>Over 35 years of architectural excellence in the Chicago area</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
 </html>
