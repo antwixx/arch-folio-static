@@ -1,171 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | BR Design & Architecture</title>
-  <meta name="description" content="Explore BR Design & Architecture's portfolio of residential, commercial, and healthcare projects across the Chicago area.">
-  <link rel="canonical" href="https://brdesignarchitecture.com/projects">
-  <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | BR Design & Architecture</title>
+    <meta name="description" content="Explore our portfolio of residential, commercial, and healthcare architectural projects.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav-header">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">BR Design</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero hero-half">
-    <div class="hero-bg" style="background-image: url('/src/assets/hero-home.jpg')"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Our Projects</h1>
-      <p>A portfolio of award-winning architectural designs</p>
-    </div>
-  </section>
-
-  <!-- Project Categories -->
-  <section class="container">
-    <div class="text-center mb-8">
-      <h2 class="section-title">Project Portfolio</h2>
-      <p class="section-subtitle mx-auto">Explore our work across residential, commercial, and healthcare sectors</p>
-    </div>
-    <div class="grid grid-3">
-      <a href="projects-residential.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/residential-project.jpg" alt="Residential Architecture Projects">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BR DESIGN & ARCHITECTURE</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <div class="card-content">
-          <p class="card-category">Residential</p>
-          <h3 class="card-title">Custom Homes & Estates</h3>
-          <p class="card-location">Luxury residential designs tailored to your lifestyle and dreams</p>
-        </div>
-      </a>
-      <a href="projects-commercial.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/commercial-project.jpg" alt="Commercial Architecture Projects">
-        </div>
-        <div class="card-content">
-          <p class="card-category">Commercial</p>
-          <h3 class="card-title">Office & Retail Spaces</h3>
-          <p class="card-location">Innovative commercial environments that inspire productivity</p>
-        </div>
-      </a>
-      <a href="projects-healthcare.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/healthcare-project.jpg" alt="Healthcare Architecture Projects">
-        </div>
-        <div class="card-content">
-          <p class="card-category">Healthcare</p>
-          <h3 class="card-title">Medical Facilities</h3>
-          <p class="card-location">Patient-centered healthcare environments that promote healing</p>
-        </div>
-      </a>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Featured Projects -->
-  <section class="section-light">
-    <div class="container">
-      <h2 class="section-title text-center mb-8">Featured Work</h2>
-      <div class="grid grid-2">
-        <a href="projects-residential.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/residential-project.jpg" alt="Modern Lakefront Estate">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Residential</p>
-            <h3 class="card-title">Modern Lakefront Estate</h3>
-            <p class="card-location">Chicago, IL • 6,500 sq ft</p>
-          </div>
-        </a>
-        <a href="projects-commercial.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/commercial-project.jpg" alt="Downtown Office Complex">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Commercial</p>
-            <h3 class="card-title">Downtown Office Complex</h3>
-            <p class="card-location">Chicago, IL • 45,000 sq ft</p>
-          </div>
-        </a>
-        <a href="projects-healthcare.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/healthcare-project.jpg" alt="Wellness Center">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Healthcare</p>
-            <h3 class="card-title">Community Wellness Center</h3>
-            <p class="card-location">Evanston, IL • 15,000 sq ft</p>
-          </div>
-        </a>
-        <a href="projects-residential.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/residential-project.jpg" alt="Historic Renovation">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Residential</p>
-            <h3 class="card-title">Historic Home Renovation</h3>
-            <p class="card-location">Oak Park, IL • 4,200 sq ft</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <main>
+        <section class="page-hero" style="background-image: url('src/assets/projects-hero.jpg');">
+            <div class="container">
+                <h1 class="page-title reveal-text">Our Projects</h1>
+                <p class="page-subtitle reveal-text">A Showcase of Excellence</p>
+            </div>
+            <div class="page-hero-overlay"></div>
+        </section>
 
-  <!-- Stats -->
-  <section class="container">
-    <div class="stats">
-      <div>
-        <div class="stat-number">500+</div>
-        <div class="stat-label">Projects Completed</div>
-      </div>
-      <div>
-        <div class="stat-number">15+</div>
-        <div class="stat-label">Awards Won</div>
-      </div>
-      <div>
-        <div class="stat-number">35+</div>
-        <div class="stat-label">Years of Experience</div>
-      </div>
-      <div>
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Client Satisfaction</div>
-      </div>
-    </div>
-  </section>
+        <section class="projects-intro">
+            <div class="container">
+                <div class="intro-content fade-in">
+                    <p class="section-description">
+                        Explore our diverse portfolio of completed projects spanning residential, commercial, and healthcare
+                        sectors. Each project represents our commitment to exceptional design and quality execution.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <!-- CTA Section -->
-  <section class="section-light">
-    <div class="container text-center">
-      <h2 class="section-title">Start Your Project</h2>
-      <p class="section-subtitle mx-auto">Ready to bring your architectural vision to life?</p>
-      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
-    </div>
-  </section>
+        <section class="project-filters">
+            <div class="container">
+                <div class="filter-buttons fade-in">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
-      <p>Over 35 years of architectural excellence in the Chicago area</p>
-    </div>
-  </footer>
+        <section class="projects-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Custom Home">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Modern Custom Home</h3>
+                                <p>A contemporary masterpiece featuring clean lines and open spaces</p>
+                            </div>
+                        </div>
+                    </div>
 
-  <script src="/script.js"></script>
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury Home Remodel">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Luxury Home Remodel</h3>
+                                <p>Complete renovation transforming a traditional home into modern elegance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contemporary Residence">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Contemporary Residence</h3>
+                                <p>Sophisticated design with stunning architectural details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Suburban Family Home">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Suburban Family Home</h3>
+                                <p>Functional design perfect for modern family living</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kitchen Renovation">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Kitchen Renovation</h3>
+                                <p>State-of-the-art kitchen with custom cabinetry and modern appliances</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="residential">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Master Suite Addition">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Residential</span>
+                                <h3>Master Suite Addition</h3>
+                                <p>Luxurious bedroom and bathroom expansion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Retail Space Design">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Retail Space Design</h3>
+                                <p>Modern retail environment designed for customer engagement</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Building Renovation">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Office Building Renovation</h3>
+                                <p>Complete transformation of outdated office space</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Interior">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Restaurant Interior</h3>
+                                <p>Inviting dining atmosphere with custom design elements</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Shopping Center">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Shopping Center</h3>
+                                <p>Multi-tenant retail development with contemporary facade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Office">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Corporate Office</h3>
+                                <p>Professional workspace designed for productivity and collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Boutique Store">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Commercial</span>
+                                <h3>Boutique Store</h3>
+                                <p>Elegant retail space with sophisticated finishes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Medical Office Building">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Medical Office Building</h3>
+                                <p>State-of-the-art medical facility with patient-focused design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dental Clinic">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Dental Clinic</h3>
+                                <p>Modern dental practice with welcoming atmosphere</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Urgent Care Center">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Urgent Care Center</h3>
+                                <p>Efficient layout optimized for patient flow and care delivery</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Veterinary Hospital">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Veterinary Hospital</h3>
+                                <p>Comprehensive animal care facility with specialized treatment areas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Physical Therapy Center">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Physical Therapy Center</h3>
+                                <p>Spacious rehabilitation facility with natural light</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item fade-in" data-category="healthcare">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Medical Laboratory">
+                            <div class="gallery-overlay">
+                                <span class="gallery-category">Healthcare</span>
+                                <h3>Medical Laboratory</h3>
+                                <p>Precision-designed lab space with advanced infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Let's Discuss Your Project</h2>
+                    <p>Ready to create something extraordinary together?</p>
+                    <a href="contact.html" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BR Design & Architecture</h3>
+                    <p>BR Design & Architecture is an architectural firm with over 50 years of combined experience that can take your project from schematic design through final construction phasing. </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Design</a></li>
+                        <li><a href="services.html">Commercial Design</a></li>
+                        <li><a href="services.html">Healthcare Design</a></li>
+                        <li><a href="services.html">Industrial Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/maps?ll=41.848788,-87.986231&z=15&t=h&hl=en&gl=US&mapclient=embed&q=1%20Trans%20Am%20Plaza%20Dr%20STE%20120%20Oakbrook%20Terrace%2C%20IL%2060181" target="_blank"> 1 Trans Am Plaza Drive, Suite 120<br>Oakbrook Terrace, IL 60181</a></p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> <a href="tel:+7085087281"> (708) 508-7281</a></p>
+                    <a href="contact.html" class="footer-cta">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
