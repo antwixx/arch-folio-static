@@ -1,182 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | BR Design & Architecture</title>
-  <meta name="description" content="Comprehensive architectural services including design development, construction documentation, 3D visualization, and project management for residential, commercial, and healthcare projects.">
-  <link rel="canonical" href="https://brdesignarchitecture.com/services">
-  <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | BR Design & Architecture</title>
+    <meta name="description" content="Comprehensive architectural services including residential, commercial, healthcare, and industrial design solutions.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav-header">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">BR Design</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero hero-half">
-    <div class="hero-bg" style="background-image: url('/src/assets/commercial-project.jpg')"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Our Services</h1>
-      <p>Comprehensive architectural solutions from concept to completion</p>
-    </div>
-  </section>
-
-  <!-- Services Overview -->
-  <section class="container">
-    <div class="text-center mb-8">
-      <h2 class="section-title">What We Offer</h2>
-      <p class="section-subtitle mx-auto">Full-service architectural design and consulting</p>
-    </div>
-    <div class="grid grid-3">
-      <div class="service-card">
-        <div class="service-icon">📐</div>
-        <h3>Schematic Design</h3>
-        <p>Initial concept development, site analysis, and preliminary design explorations to establish the project vision and direction.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📋</div>
-        <h3>Design Development</h3>
-        <p>Detailed design refinement, material selection, and systems integration to create comprehensive project documentation.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📝</div>
-        <h3>Construction Documents</h3>
-        <p>Complete technical drawings and specifications required for permitting, bidding, and construction.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🎨</div>
-        <h3>3D Visualization</h3>
-        <p>Photorealistic renderings and walkthroughs to help you visualize your project before construction begins.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🏗️</div>
-        <h3>Construction Administration</h3>
-        <p>On-site observation, contractor coordination, and quality control throughout the construction process.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">💡</div>
-        <h3>Consulting Services</h3>
-        <p>Expert advice on zoning, code compliance, sustainability, and design optimization for your project.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Types -->
-  <section class="section-light">
-    <div class="container">
-      <div class="text-center mb-8">
-        <h2 class="section-title">Project Types</h2>
-        <p class="section-subtitle mx-auto">Specialized expertise across multiple sectors</p>
-      </div>
-      <div class="grid grid-3">
-        <a href="projects-residential.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/residential-project.jpg" alt="Residential Architecture">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Residential</p>
-            <h3 class="card-title">Custom Homes & Renovations</h3>
-            <p class="card-location">From luxury estates to intimate remodels, we create homes that reflect your lifestyle and values.</p>
-          </div>
-        </a>
-        <a href="projects-commercial.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/commercial-project.jpg" alt="Commercial Architecture">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Commercial</p>
-            <h3 class="card-title">Office & Retail Spaces</h3>
-            <p class="card-location">Innovative commercial environments that enhance productivity and customer experience.</p>
-          </div>
-        </a>
-        <a href="projects-healthcare.html" class="card">
-          <div class="card-image">
-            <img src="/src/assets/healthcare-project.jpg" alt="Healthcare Architecture">
-          </div>
-          <div class="card-content">
-            <p class="card-category">Healthcare</p>
-            <h3 class="card-title">Medical Facilities</h3>
-            <p class="card-location">Patient-centered healthcare environments that support healing and wellness.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section class="container">
-    <div class="text-center mb-8">
-      <h2 class="section-title">Our Process</h2>
-      <p class="section-subtitle mx-auto">A proven approach to architectural excellence</p>
-    </div>
-    <div class="max-w-4xl mx-auto">
-      <div style="display: flex; flex-direction: column; gap: 2rem;">
-        <div style="display: flex; gap: 2rem; align-items: flex-start;">
-          <div style="flex-shrink: 0; width: 3rem; height: 3rem; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold;">1</div>
-          <div>
-            <h3 style="color: var(--navy); font-size: 1.5rem; margin-bottom: 0.5rem;">Discovery</h3>
-            <p style="color: var(--steel); line-height: 1.8;">We meet with you to understand your vision, needs, budget, and timeline. Site analysis and programming establish project goals.</p>
-          </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BR DESIGN & ARCHITECTURE</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <div style="display: flex; gap: 2rem; align-items: flex-start;">
-          <div style="flex-shrink: 0; width: 3rem; height: 3rem; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold;">2</div>
-          <div>
-            <h3 style="color: var(--navy); font-size: 1.5rem; margin-bottom: 0.5rem;">Design</h3>
-            <p style="color: var(--steel); line-height: 1.8;">Through iterative design phases, we develop and refine concepts, exploring options and making decisions together.</p>
-          </div>
-        </div>
-        <div style="display: flex; gap: 2rem; align-items: flex-start;">
-          <div style="flex-shrink: 0; width: 3rem; height: 3rem; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold;">3</div>
-          <div>
-            <h3 style="color: var(--navy); font-size: 1.5rem; margin-bottom: 0.5rem;">Documentation</h3>
-            <p style="color: var(--steel); line-height: 1.8;">Detailed construction drawings and specifications provide contractors with everything needed to build your project.</p>
-          </div>
-        </div>
-        <div style="display: flex; gap: 2rem; align-items: flex-start;">
-          <div style="flex-shrink: 0; width: 3rem; height: 3rem; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold;">4</div>
-          <div>
-            <h3 style="color: var(--navy); font-size: 1.5rem; margin-bottom: 0.5rem;">Construction</h3>
-            <p style="color: var(--steel); line-height: 1.8;">We provide construction administration services, ensuring the design is implemented correctly and addressing issues as they arise.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- CTA Section -->
-  <section class="section-light">
-    <div class="container text-center">
-      <h2 class="section-title">Ready to Get Started?</h2>
-      <p class="section-subtitle mx-auto">Let's discuss your project and how we can help bring your vision to life</p>
-      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
-    </div>
-  </section>
+    <main>
+        <section class="page-hero" style="background-image: url('src/assets/services-hero.jpg');">
+            <div class="container">
+                <h1 class="page-title reveal-text">Our Services</h1>
+                <p class="page-subtitle reveal-text">Comprehensive Architectural Solutions</p>
+            </div>
+            <div class="page-hero-overlay"></div>
+        </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
-      <p>Over 35 years of architectural excellence in the Chicago area</p>
-    </div>
-  </footer>
+        <section class="services-intro">
+            <div class="container">
+                <div class="intro-content fade-in">
+                    <h2 class="section-title">From Concept to Concrete</h2>
+                    <p class="section-description">
+                        At BR Design & Architecture, we offer a full spectrum of architectural services tailored to meet
+                        the unique needs of each project. Our experienced team guides you through every phase of the
+                        design and construction process, ensuring exceptional results that exceed expectations.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <script src="/script.js"></script>
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-image fade-in">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Residential architecture">
+                    </div>
+                    <div class="service-detail-text fade-in">
+                        <div class="service-number">01</div>
+                        <h2>Residential Design</h2>
+                        <p>
+                            Transform your living space into the home of your dreams. Whether you're planning a new
+                            custom home or remodeling your existing residence, we create designs that reflect your
+                            lifestyle, personality, and aspirations.
+                        </p>
+                        <ul class="service-features">
+                            <li>Custom Home Design</li>
+                            <li>Home Remodeling & Additions</li>
+                            <li>Kitchen & Bathroom Design</li>
+                            <li>Outdoor Living Spaces</li>
+                            <li>Historic Renovation</li>
+                            <li>Interior Space Planning</li>
+                        </ul>
+                        <a href="projects.html" class="service-link">View Residential Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail alt">
+            <div class="container">
+                <div class="service-detail-content reverse">
+                    <div class="service-detail-image fade-in">
+                        <img src="https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Commercial architecture">
+                    </div>
+                    <div class="service-detail-text fade-in">
+                        <div class="service-number">02</div>
+                        <h2>Commercial Design</h2>
+                        <p>
+                            Create spaces that drive business success. Our commercial designs blend functionality with
+                            aesthetic appeal to enhance your brand identity, improve productivity, and create memorable
+                            experiences for customers and employees alike.
+                        </p>
+                        <ul class="service-features">
+                            <li>Office Space Design</li>
+                            <li>Retail Store Design</li>
+                            <li>Restaurant & Hospitality</li>
+                            <li>Shopping Centers</li>
+                            <li>Tenant Improvements</li>
+                            <li>Mixed-Use Developments</li>
+                        </ul>
+                        <a href="projects.html" class="service-link">View Commercial Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-image fade-in">
+                        <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Healthcare architecture">
+                    </div>
+                    <div class="service-detail-text fade-in">
+                        <div class="service-number">03</div>
+                        <h2>Healthcare Design</h2>
+                        <p>
+                            Design healing environments that prioritize patient comfort and operational efficiency. We
+                            understand the unique requirements of healthcare facilities and create spaces that support
+                            both caregivers and those receiving care.
+                        </p>
+                        <ul class="service-features">
+                            <li>Medical Office Buildings</li>
+                            <li>Clinics & Urgent Care</li>
+                            <li>Dental Offices</li>
+                            <li>Veterinary Hospitals</li>
+                            <li>Assisted Living Facilities</li>
+                            <li>Laboratory Design</li>
+                        </ul>
+                        <a href="projects.html" class="service-link">View Healthcare Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-detail alt">
+            <div class="container">
+                <div class="service-detail-content reverse">
+                    <div class="service-detail-image fade-in">
+                        <img src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Industrial architecture">
+                    </div>
+                    <div class="service-detail-text fade-in">
+                        <div class="service-number">04</div>
+                        <h2>Industrial Design</h2>
+                        <p>
+                            Build efficient, durable industrial facilities designed for optimal performance. Our industrial
+                            designs maximize workflow efficiency while meeting all safety and regulatory requirements.
+                        </p>
+                        <ul class="service-features">
+                            <li>Manufacturing Facilities</li>
+                            <li>Warehouses & Distribution</li>
+                            <li>Production Plants</li>
+                            <li>Research & Development</li>
+                            <li>Cold Storage Facilities</li>
+                            <li>Industrial Parks</li>
+                        </ul>
+                        <a href="projects.html" class="service-link">View Industrial Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-description">
+                    A proven methodology that ensures successful project delivery from start to finish.
+                </p>
+                <div class="process-grid">
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Initial Consultation</h3>
+                        <p>We meet to discuss your vision, budget, timeline, and project requirements in detail.</p>
+                    </div>
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Concept Design</h3>
+                        <p>Our team develops preliminary design concepts based on your needs and site conditions.</p>
+                    </div>
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Design Development</h3>
+                        <p>We refine the approved concept into detailed construction documents and specifications.</p>
+                    </div>
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Permitting & Approval</h3>
+                        <p>We handle all necessary permits, zoning approvals, and regulatory compliance requirements.</p>
+                    </div>
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Construction Administration</h3>
+                        <p>We oversee construction to ensure the project is built according to plan and on schedule.</p>
+                    </div>
+                    <div class="process-card fade-in">
+                        <div class="process-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Project Completion</h3>
+                        <p>Final walkthrough, quality assurance, and handover of your completed project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Contact us today to discuss your architectural project</p>
+                    <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BR Design & Architecture</h3>
+                    <p>BR Design & Architecture is an architectural firm with over 50 years of combined experience that can take your project from schematic design through final construction phasing. </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Design</a></li>
+                        <li><a href="services.html">Commercial Design</a></li>
+                        <li><a href="services.html">Healthcare Design</a></li>
+                        <li><a href="services.html">Industrial Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/maps?ll=41.848788,-87.986231&z=15&t=h&hl=en&gl=US&mapclient=embed&q=1%20Trans%20Am%20Plaza%20Dr%20STE%20120%20Oakbrook%20Terrace%2C%20IL%2060181" target="_blank"> 1 Trans Am Plaza Drive, Suite 120<br>Oakbrook Terrace, IL 60181</a></p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> <a href="tel:+7085087281">(708) 508-7281</a></p>
+                    <a href="contact.html" class="footer-cta">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
