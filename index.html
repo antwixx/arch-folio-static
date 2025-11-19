@@ -1,156 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BR Design & Architecture | Award-Winning Architectural Design in Chicago</title>
-  <meta name="description" content="BR Design & Architecture offers over 35 years of experience in residential, commercial, and healthcare architecture. From concept to concrete, we deliver award-winning designs in the Chicago area.">
-  <meta name="keywords" content="architecture, architectural design, Chicago architect, residential architecture, commercial architecture, healthcare architecture, custom homes, building design">
-  
-  <meta property="og:title" content="BR Design & Architecture | Award-Winning Architectural Design">
-  <meta property="og:description" content="Over 35 years of architectural excellence. Residential, commercial, and healthcare design services in Chicago.">
-  <meta property="og:type" content="website">
-  
-  <link rel="canonical" href="https://brdesignarchitecture.com/">
-  <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Design & Architecture | Award-Winning Architecture Firm</title>
+    <meta name="description" content="BR Design & Architecture - Over 35 years of experience in commercial, residential, and healthcare architecture. From concept to concrete.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav-header">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">BR Design</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BR DESIGN & ARCHITECTURE</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg" style="background-image: url('/src/assets/hero-home.jpg')"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Excellence in Architectural Design</h1>
-      <p>Creating innovative, sustainable, and timeless architectural solutions for over 35 years</p>
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="projects.html" class="btn btn-primary">View Our Work</a>
-        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-      </div>
-    </div>
-  </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">BR Design & Architecture</span>
+                </h1>
+                <p class="hero-subtitle reveal-text">From Concept to Concrete</p>
+                <p class="hero-tagline reveal-text">Award-winning architectural design with over 50 years of experience serving Chicago and Illinois</p>
+                <a href="projects.html" class="cta-button reveal-text">View Our Work</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
 
-  <!-- About Preview -->
-  <section class="container">
-    <div class="grid grid-2" style="align-items: center;">
-      <div>
-        <h2 class="section-title">From Concept to Concrete</h2>
-        <p style="color: var(--steel); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
-          With over 35 years of experience, BR Design & Architecture has established itself as a trusted partner in creating exceptional architectural solutions. Our comprehensive approach encompasses everything from initial concept design to final construction documentation.
-        </p>
-        <p style="color: var(--steel); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
-          We specialize in residential, commercial, and healthcare architecture, bringing innovative design thinking and meticulous attention to detail to every project.
-        </p>
-        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
-      </div>
-      <div>
-        <img src="/src/assets/residential-project.jpg" alt="Architectural design" style="width: 100%; height: auto;">
-      </div>
-    </div>
-  </section>
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-content fade-in">
+                    <h2 class="section-title">We're With You From Concept to Concrete</h2>
+                    <p class="section-description">
+                        BR Design & Architecture is an award-winning firm dedicated to creating exceptional spaces
+                        that blend innovative design with practical functionality. With over three decades of
+                        experience, we bring your vision to life through meticulous planning and expert execution.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Stats Section -->
-  <section class="section-light">
-    <div class="container">
-      <div class="stats">
-        <div>
-          <div class="stat-number">35+</div>
-          <div class="stat-label">Years of Excellence</div>
-        </div>
-        <div>
-          <div class="stat-number">500+</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div>
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Client Satisfaction</div>
-        </div>
-        <div>
-          <div class="stat-number">15+</div>
-          <div class="stat-label">Awards Won</div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Our Expertise</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Residential Design</h3>
+                        <p>Custom homes and remodels that reflect your lifestyle and aspirations.</p>
+                        <a href="services.html" class="service-link">Learn More →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3>Commercial Design</h3>
+                        <p>Innovative commercial spaces that enhance productivity and brand identity.</p>
+                        <a href="services.html" class="service-link">Learn More →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3>Healthcare Design</h3>
+                        <p>Functional and healing environments for medical facilities.</p>
+                        <a href="services.html" class="service-link">Learn More →</a>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </div>
+                        <h3>Industrial Design</h3>
+                        <p>Efficient and robust industrial facilities built for performance.</p>
+                        <a href="services.html" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Featured Projects -->
-  <section class="container">
-    <div class="text-center mb-8">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle mx-auto">Explore our portfolio of award-winning architectural designs</p>
-    </div>
-    <div class="grid grid-3">
-      <a href="projects-residential.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/residential-project.jpg" alt="Residential Architecture">
-        </div>
-        <div class="card-content">
-          <p class="card-category">Residential</p>
-          <h3 class="card-title">Custom Homes</h3>
-          <p class="card-location">Luxury residential designs tailored to your lifestyle</p>
-        </div>
-      </a>
-      <a href="projects-commercial.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/commercial-project.jpg" alt="Commercial Architecture">
-        </div>
-        <div class="card-content">
-          <p class="card-category">Commercial</p>
-          <h3 class="card-title">Office Buildings</h3>
-          <p class="card-location">Innovative commercial spaces that inspire</p>
-        </div>
-      </a>
-      <a href="projects-healthcare.html" class="card">
-        <div class="card-image">
-          <img src="/src/assets/healthcare-project.jpg" alt="Healthcare Architecture">
-        </div>
-        <div class="card-content">
-          <p class="card-category">Healthcare</p>
-          <h3 class="card-title">Medical Facilities</h3>
-          <p class="card-location">Patient-centered healthcare environments</p>
-        </div>
-      </a>
-    </div>
-    <div class="text-center mt-8">
-      <a href="projects.html" class="btn btn-primary">View All Projects</a>
-    </div>
-  </section>
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800');">
+                            <div class="project-overlay">
+                                <span class="project-category">Residential</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Modern Custom Home</h3>
+                            <p>Contemporary design meets timeless elegance</p>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image" style="background-image: url('https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=800');">
+                            <div class="project-overlay">
+                                <span class="project-category">Commercial</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Retail Space Transformation</h3>
+                            <p>Creating engaging customer experiences</p>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image" style="background-image: url('https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800');">
+                            <div class="project-overlay">
+                                <span class="project-category">Healthcare</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Medical Office Design</h3>
+                            <p>Patient-focused healing environments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-center">
+                    <a href="projects.html" class="cta-button-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- CTA Section -->
-  <section class="section-light">
-    <div class="container text-center">
-      <h2 class="section-title">Ready to Start Your Project?</h2>
-      <p class="section-subtitle mx-auto">Let's bring your architectural vision to life</p>
-      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
-    </div>
-  </section>
+        <section class="experience-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="35">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Satisfied Clients</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
-      <p>Over 35 years of architectural excellence in the Chicago area</p>
-    </div>
-  </footer>
+		<section class="testimonial-section">
+		<div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
 
-  <script src="/script.js"></script>
+        <div class="testimonial-carousel-container fade-in">
+            <button class="testimonial-arrow left-arrow" aria-label="Scroll left">‹</button>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional, responsive, and incredibly detail-oriented. BR Design transformed our vision into reality while staying within budget."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">— Commercial Client</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their experienced design coupled with honest advice made our project a seamless experience from start to finish."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">— Residential Client</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Exceptional communication and execution. We couldn’t be happier with our new facility."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">— Healthcare Client</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A masterful blend of creativity and practicality — they exceeded every expectation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">— Industrial Client</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="testimonial-arrow right-arrow" aria-label="Scroll right">›</button>
+        </div>
+		</div>
+
+		<div class="testimonial-more-reviews fade-in">
+			<a 
+				href="https://www.thumbtack.com/il/villa-park/architects/br-design-architecture/service/78114093389841568" 
+				target="_blank" 
+				class="thumbtack-button"
+			>
+				 View All Reviews on Thumbtack
+			</a>
+		</div>
+
+
+
+
+		</section>
+
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's bring your architectural vision to life</p>
+                    <a href="contact.html" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BR Design & Architecture</h3>
+                    <p>BR Design & Architecture is an architectural firm with over 50 years of combined experience that can take your project from schematic design through final construction phasing. </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Design</a></li>
+                        <li><a href="services.html">Commercial Design</a></li>
+                        <li><a href="services.html">Healthcare Design</a></li>
+                        <li><a href="services.html">Industrial Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/maps?ll=41.848788,-87.986231&z=15&t=h&hl=en&gl=US&mapclient=embed&q=1%20Trans%20Am%20Plaza%20Dr%20STE%20120%20Oakbrook%20Terrace%2C%20IL%2060181" target="_blank"> 1 Trans Am Plaza Drive, Suite 120<br>Oakbrook Terrace, IL 60181</a></p>
+					<p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> <a href="tel:+7085087281">(708) 508-7281</a></p>
+                    <a href="contact.html" class="footer-cta">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BR Design & Architecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
