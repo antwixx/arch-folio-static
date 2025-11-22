@@ -721,6 +721,22 @@ section {
     text-align: center;
 }
 
+.about-intro .cta-button {
+    padding: 16px 56px;
+    margin: 10px 12px;
+}
+
+.about-intro p.section-description:last-of-type {
+    margin-top: 32px;
+}
+
+.about-font {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+}
+
 .values-section {
     background-color: var(--color-bg);
 }
@@ -1347,8 +1363,8 @@ section {
 }
 
 .partner-image {
-    width: 280px;
-    height: 280px;
+    width: 400px;
+    height: 600px;
     margin: 0 auto var(--spacing-md);
     border: 3px solid var(--color-border);
     overflow: hidden;
@@ -1441,7 +1457,6 @@ section {
     }
 }
 
-/* --- Testimonial Carousel --- */
 
 .testimonial-carousel-container {
     position: relative;
@@ -1464,7 +1479,7 @@ section {
     display: none;
 }
 
-/* Clean, centered, circular arrows */
+
 .testimonial-arrow {
     width: 48px;
     height: 48px;
@@ -1505,14 +1520,12 @@ section {
 }
 
 
-/* Ensure testimonial cards shrink nicely in horizontal scroll */
 .testimonial-carousel .testimonial-card {
     min-width: 320px;
     max-width: 380px;
     flex: 0 0 auto;
 }
 
-/* --- Thumbtack Button Under Testimonials --- */
 
 .testimonial-more-reviews {
     text-align: center;
@@ -1540,7 +1553,125 @@ section {
     transform: translateY(-2px);
 }
 
+.clients-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg-alt);
+}
 
+.clients-content {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.clients-content .section-title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.clients-description {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.clients-marquee {
+    overflow: hidden;
+    background-color: var(--color-bg);
+    padding: var(--spacing-lg) 0;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.marquee-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.client-logo {
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.client-logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0.8) saturate(0.9);
+    transition: filter var(--transition-medium);
+}
+
+.client-logo:hover img {
+    filter: brightness(1) saturate(1);
+}
+
+@media (max-width: 1024px) {
+    .marquee-content {
+        gap: var(--spacing-lg);
+    }
+
+    .client-logo {
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .clients-content {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .clients-marquee {
+        padding: var(--spacing-md) 0;
+    }
+
+    .marquee-content {
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
+    }
+
+    .client-logo {
+        height: 120px;
+    }
+
+    .clients-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clients-marquee {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .marquee-content {
+        gap: var(--spacing-sm);
+    }
+
+    .client-logo {
+        height: 100px;
+    }
+
+    .clients-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
 
 
 @media (max-width: 768px) {
