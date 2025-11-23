@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			if (entry.target.classList.contains('stat-item')) {
 
-			    // Prevent stat from animating more than once
- 			   if (!entry.target.dataset.hasAnimated) {
-  			      animateCounter(entry.target);
- 			       entry.target.dataset.hasAnimated = "true";
-			    }
+				// Prevent stat from animating more than once
+				if (!entry.target.dataset.hasAnimated) {
+					animateCounter(entry.target);
+					entry.target.dataset.hasAnimated = "true";
+				}
 			}
 
             }
@@ -155,22 +155,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const leftArrow = document.querySelector('.left-arrow');
     const rightArrow = document.querySelector('.right-arrow');
 
-    if (testimonialCarousel) {
-        const scrollAmount = 350; // adjust if needed
+if (testimonialCarousel) {
 
-        rightArrow.addEventListener('click', () => {
-            testimonialCarousel.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
+    rightArrow.addEventListener('click', () => {
+        const cardWidth = testimonialCarousel.querySelector('.testimonial-card').offsetWidth;
+        testimonialCarousel.scrollBy({
+            left: cardWidth,
+            behavior: 'smooth'
         });
+    });
 
-        leftArrow.addEventListener('click', () => {
-            testimonialCarousel.scrollBy({
-                left: -scrollAmount,
-                behavior: 'smooth'
-            });
+    leftArrow.addEventListener('click', () => {
+        const cardWidth = testimonialCarousel.querySelector('.testimonial-card').offsetWidth;
+        testimonialCarousel.scrollBy({
+            left: -cardWidth,
+            behavior: 'smooth'
         });
-    }
+    });
+}
+
 
 });
