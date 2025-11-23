@@ -35,9 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
 
-                if (entry.target.classList.contains('stat-item')) {
-                    animateCounter(entry.target);
-                }
+			if (entry.target.classList.contains('stat-item')) {
+
+			    // Prevent stat from animating more than once
+ 			   if (!entry.target.dataset.hasAnimated) {
+  			      animateCounter(entry.target);
+ 			       entry.target.dataset.hasAnimated = "true";
+			    }
+			}
+
             }
         });
     }, observerOptions);
