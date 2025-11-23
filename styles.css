@@ -490,14 +490,18 @@ section {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
     text-align: center;
+	width: 100%;
+	justify-items: center !important;
 }
 
 .stat-item {
-    padding: var(--spacing-lg);
+	max-width: 140px;
+    padding: var(--spacing-md);
     opacity: 0;
+	width: 100%;
     transform: translateY(30px);
 }
 
@@ -1473,6 +1477,8 @@ section {
     scroll-behavior: smooth;
     gap: var(--spacing-lg);
     padding-bottom: 10px;
+	scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .testimonial-carousel::-webkit-scrollbar {
@@ -1524,6 +1530,7 @@ section {
     min-width: 320px;
     max-width: 380px;
     flex: 0 0 auto;
+	scroll-snap-align: start;
 }
 
 
@@ -1746,6 +1753,7 @@ section {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+		padding: var(--spacing-md);
     }
 
     section {
@@ -1756,6 +1764,7 @@ section {
 @media (max-width: 480px) {
     .stats-grid {
         grid-template-columns: 1fr;
+		padding: var(--spacing-sm);
     }
 
     .filter-buttons {
