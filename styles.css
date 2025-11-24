@@ -1456,6 +1456,10 @@ section {
         height: 220px;
     }
 
+    .partner-image img {
+        object-position: top;
+	}
+
     .services-detail-grid {
         grid-template-columns: 1fr;
     }
