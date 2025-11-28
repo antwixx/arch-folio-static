@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects | BR Design & Architecture</title>
-    <meta name="description" content="Explore our portfolio of residential, commercial, and healthcare architectural projects.">
+    <title>Project Gallery | BR Design & Architecture</title>
+    <meta name="description" content="Explore BR Design & Architecture's portfolio of residential, commercial, and healthcare architectural projects.">
     <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+	<script src="main.js"></script>
+	<script src="lightbox.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -31,7 +36,7 @@
     <main>
         <section class="page-hero" style="background-image: url('src/assets/projects-hero.jpg');">
             <div class="container">
-                <h1 class="page-title reveal-text">Our Projects</h1>
+                <h1 class="page-title reveal-text">Project Gallery</h1>
                 <p class="page-subtitle reveal-text">A Showcase of Excellence and Care</p>
             </div>
             <div class="page-hero-overlay"></div>
@@ -62,203 +67,332 @@
         <section class="projects-gallery">
             <div class="container">
                 <div class="gallery-grid">
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Custom Home">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Modern Custom Home</h3>
-                                <p>A contemporary masterpiece featuring clean lines and open spaces</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Aurelio's Pizza"
+						 data-desc="Revitalizing a Classic: Integrating signature brand elements with clean, modern construction. Located in Homewood, IL."
+						 data-images='[
+							"src/assets/images/Aurilios-2.webp",
+							"src/assets/images/Aurilios-Interior-1.webp",
+							"src/assets/images/1366 (12).webp",
+							"src/assets/images/1366 (13).webp",
+							"src/assets/images/Aurilios-render.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Aurilios-2.webp" alt="Aurelio's Pizza Homewood, Illinois">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Aurelio's Pizza</h3>
+								<p>Homewood, Illinois</p>
+							</div>
+						</div>
+					</div>
 
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury Home Remodel">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Luxury Home Remodel</h3>
-                                <p>Complete renovation transforming a traditional home into modern elegance</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Lincoln Farmstead"
+						 data-desc="Complete renovation transforming an aging barn into modern elegance. Features include a custom raised deck with staircase and increased accessibility."
+						 data-images='[
+							"src/assets/images/Photo-Jul-30-9-35-22-AM-scaled.webp",
+							"src/assets/images/Photo-Jun-12-11-47-08-AM-scaled.webp",
+							"src/assets/images/Lincoln-Farmstead-After.webp",
+							"src/assets/images/Lincoln-Farmstead-Before.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Photo-Jul-30-9-35-22-AM-scaled.webp" alt="Lincoln Farmstead Huntley, Illinois">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Lincoln Farmstead</h3>
+								<p>Huntley, Illinois</p>
+							</div>
+						</div>
+					</div>
+                    <div class="gallery-item fade-in" 
+						 data-category="residential"
+						 data-title="Modern Custom Home Addition"
+						 data-desc="A contemporary masterpiece featuring clean lines and open spaces. Located in Lemont, IL."
+						 data-images='[
+							"src/assets/images/Lemont-Project-2.webp",
+							"src/assets/images/Lemont-Project-1.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Lemont-Project-2.webp" alt="Modern Custom Home">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Residential</span>
+								<h3>Custom Home Addition</h3>
+								<p>Lemont, Illinois</p>
+							</div>
+						</div>
+					</div>
 
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contemporary Residence">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Contemporary Residence</h3>
-                                <p>Sophisticated design with stunning architectural details</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="residential"
+						 data-title="Modern Custom Home"
+						 data-desc="Defining Contrast: Warm cedar tones against cool modern hues create modern curbside appeal."
+						 data-images='[
+							"src/assets/images/1366.webp",
+							"src/assets/images/Exterior-1-render.webp",
+							"src/assets/images/Interior-1-render.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/1366.webp" alt="Luxury Home Remodel">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Residential</span>
+								<h3>Modern Custom Home</h3>
+								<p>Lemont, Illinois</p>
+							</div>
+						</div>
+					</div>    
 
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Suburban Family Home">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Suburban Family Home</h3>
-                                <p>Functional design perfect for modern family living</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="residential"
+						 data-title="Remodel of a Traditional Home"
+						 data-desc="Traditional redesign of a suburban home"
+						 data-images='["src/assets/images/1366 (2).webp", "src/assets/images/1366 (1).webp", "src/assets/images/DSCN2067.webp"]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/1366 (2).webp" alt="Dialysis Care Redesign">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Residential</span>
+								<h3>Traditional Home Design</h3>
+								<p>Lemont, Illinois</p>
+							</div>
+						</div>
+					</div>
 
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kitchen Renovation">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Kitchen Renovation</h3>
-                                <p>State-of-the-art kitchen with custom cabinetry and modern appliances</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Sparkle Dog Grooming"
+						 data-desc="Structured Elegance: Clean geometry and expansive glass define a premium, functional retail presence."
+						 data-images='[
+							"src/assets/images/DSC02459 (2).webp",
+							"src/assets/images/IMG_3475.webp",
+							"src/assets/images/IMG_3481.webp",
+							"src/assets/images/DSC02559 (1).webp",
+							"src/assets/images/IMG_3477.webp",
+							"src/assets/images/IMG_3489.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/DSC02459 (2).webp" alt="Luxury Home Remodel">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Sparkle Dog Grooming</h3>
+								<p>Oklahoma</p>
+							</div>
+						</div>
+					</div>    
+					
+					<div class="gallery-item fade-in" 
+						 data-category="healthcare"
+						 data-title="Exterior Remodel of Dialysis Care"
+						 data-desc="Located in Evergreen Park, IL."
+						 data-images='["src/assets/images/Evergreen-Park.webp", "src/assets/images/Dialysis-Care.webp"]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Evergreen-Park.webp" alt="Dialysis Care Redesign">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Health Care</span>
+								<h3>Exterior Health Care Remodel</h3>
+								<p>Evergreen Park, Illinois</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Sparkle Dog Grooming"
+						 data-desc="Structured Elegance: Clean geometry and expansive glass define a premium, functional retail presence."
+						 data-images='[
+							"src/assets/images/IMG_3487.webp",
+							"src/assets/images/IMG_3485.webp",
+							"src/assets/images/IMG_3481.webp",
+							"src/assets/images/IMG_3482.webp",
+							"src/assets/images/IMG_3493.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/IMG_3487.webp" alt="Luxury Home Remodel">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Sparkle Dog Grooming</h3>
+								<p>Missouri</p>
+							</div>
+						</div>
+					</div>  
 
-                    <div class="gallery-item fade-in" data-category="residential">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Master Suite Addition">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Residential</span>
-                                <h3>Master Suite Addition</h3>
-                                <p>Luxurious bedroom and bathroom expansion</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Strip Mall Redesign"
+						 data-desc="Complete renovation transforming a traditional strip mall into modern elegance."
+						 data-images='[
+							"src/assets/images/Glendale-2.webp",
+							"src/assets/images/Glendale2-2.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Glendale-2.webp" alt="Luxury Home Remodel">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Strip Mall Redesign</h3>
+								<p>Glendale</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Sharko's BBQ"
+						 data-desc="Integrating signature brand elements with clean, modern construction. Located in Naperville, IL."
+						 data-images='[
+							"src/assets/images/1366 (18).webp",
+							"src/assets/images/Sharkos-BBQ-1.webp",
+							"src/assets/images/1366 (20).webp",
+							"src/assets/images/1366 (19).webp",
+							"src/assets/images/Outdoor-Patio.webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/1366 (18).webp" alt="Sharko's BBQ">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Sharko's BBQ</h3>
+								<p>Naperville, IL</p>
+							</div>
+						</div>
+					</div>
+					
+                    <div class="gallery-item fade-in" 
+						 data-category="residential"
+						 data-title="Modern Custom Poolhouse"
+						 data-desc="A modern poolhouse featuring an in-ground pool with a relaxing design."
+						 data-images='[
+							"src/assets/images/1366 (7).webp",
+							"src/assets/images/1366 (9).webp",
+							"src/assets/images/1366 (8).webp",
+							"src/assets/images/1366 (6).webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/1366 (7).webp" alt="Modern Custom Poolhouse">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Residential</span>
+								<h3>Modern Custom Poolhouse</h3>
+								<p>Illinois</p>
+							</div>
+						</div>
+					</div>
 
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Retail Space Design">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Retail Space Design</h3>
-                                <p>Modern retail environment designed for customer engagement</p>
-                            </div>
-                        </div>
-                    </div>
+					<div class="gallery-item fade-in" 
+						 data-category="healthcare"
+						 data-title="Anytime Fitness"
+						 data-desc="Redesign of Anytime Fitness"
+						 data-images='[
+						 "src/assets/images/Anytime-Fitness-1.webp", 
+						 "src/assets/images/1366 (37).webp",
+						 "src/assets/images/1366 (35).webp",
+						 "src/assets/images/1366 (38).webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Anytime-Fitness-1.jpg" alt="Anytime Fitness">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Health Care</span>
+								<h3>Anytime Fitness</h3>
+								<p>Illinois</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="gallery-item fade-in" 
+						 data-category="commercial"
+						 data-title="Business Center"
+						 data-desc="Redesign of a business center to create an inviting and productive atmosphere."
+						 data-images='[
+							"src/assets/images/IMG_1753.webp",
+							"src/assets/images/Interior-Office.webp",
+							"src/assets/images/1366 (4).webp",
+							"src/assets/images/P1030374-2.webp",
+							"src/assets/images/1366 (11).webp",
+							"src/assets/images/1366 (27).webp",
+							"src/assets/images/1366 (10).webp"
+						 ]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/IMG_1753.webp" alt="Business Center">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Commercial</span>
+								<h3>Business Center</h3>
+								<p>Illinois</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="gallery-item fade-in" 
+						 data-category="residential"
+						 data-title="Modern Custom Home"
+						 data-desc="A kitchen transformation featuring modern cabinetry and countertops. Located in Wheaton, IL."
+						 data-images='["src/assets/images/Wheaton-Remodel-After.webp","src/assets/images/Wheaton-Remodel-Before.webp"]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Wheaton-Remodel-After.webp" alt="Modern Custom Home">
+							<div class="multi-image-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+							</div>
+							<div class="gallery-overlay">
+								<span class="gallery-category">Residential</span>
+								<h3>Modern Kitchen Remodel</h3>
+								<p>Wheaton, Illinois</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="gallery-item fade-in" 
+						 data-category="healthcare"
+						 data-title="Interior Remodel of a Dental Office"
+						 data-desc="Modern redesign of a dental office lobby"
+						 data-images='["src/assets/images/Dentist-Office.webp"]'>
+						<div class="gallery-image">
+							<img src="src/assets/images/Dentist-Office.webp" alt="Dialysis Care Redesign">
+							<div class="gallery-overlay">
+								<span class="gallery-category">Health Care</span>
+								<h3>Dental Office Redesign</h3>
+								<p>Illinois</p>
+							</div>
+						</div>
+					</div>
+					
 
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Building Renovation">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Office Building Renovation</h3>
-                                <p>Complete transformation of outdated office space</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Interior">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Restaurant Interior</h3>
-                                <p>Inviting dining atmosphere with custom design elements</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Shopping Center">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Shopping Center</h3>
-                                <p>Multi-tenant retail development with contemporary facade</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Office">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Corporate Office</h3>
-                                <p>Professional workspace designed for productivity and collaboration</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="commercial">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Boutique Store">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Commercial</span>
-                                <h3>Boutique Store</h3>
-                                <p>Elegant retail space with sophisticated finishes</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Medical Office Building">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Medical Office Building</h3>
-                                <p>State-of-the-art medical facility with patient-focused design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dental Clinic">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Dental Clinic</h3>
-                                <p>Modern dental practice with welcoming atmosphere</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Urgent Care Center">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Urgent Care Center</h3>
-                                <p>Efficient layout optimized for patient flow and care delivery</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Veterinary Hospital">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Veterinary Hospital</h3>
-                                <p>Comprehensive animal care facility with specialized treatment areas</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Physical Therapy Center">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Physical Therapy Center</h3>
-                                <p>Spacious rehabilitation facility with natural light</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-in" data-category="healthcare">
-                        <div class="gallery-image">
-                            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Medical Laboratory">
-                            <div class="gallery-overlay">
-                                <span class="gallery-category">Healthcare</span>
-                                <h3>Medical Laboratory</h3>
-                                <p>Precision-designed lab space with advanced infrastructure</p>
-                            </div>
-                        </div>
-                    </div>
+					
                 </div>
             </div>
         </section>
@@ -317,6 +451,23 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        
+        <div class="modal-body">
+            <div class="modal-image-container">
+                <img src="" alt="Project Image" class="modal-main-image">
+                <button class="modal-prev" aria-label="Previous image">&#10094;</button>
+                <button class="modal-next" aria-label="Next image">&#10095;</button>
+            </div>
+            <div class="modal-info">
+                <span class="modal-category"></span>
+                <h3 class="modal-title"></h3>
+                <p class="modal-description"></p>
+                <div class="modal-dots"></div> </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
