@@ -103,22 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-
-            console.log('Form submission:', data);
-
-            alert('Thank you for your inquiry! We will get back to you shortly.');
-
-            this.reset();
-        });
-    }
-
     const smoothScroll = function(target) {
         const element = document.querySelector(target);
         if (element) {
