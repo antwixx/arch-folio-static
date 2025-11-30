@@ -1,4 +1,4 @@
-* {
+F* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1337,21 +1337,39 @@ section {
     margin-bottom: var(--spacing-lg);
 }
 
+
 .map-placeholder {
+    width: 100%;
     height: 400px;
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(30px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    display: block;
 }
 
-.map-overlay {
-    text-align: center;
-    padding: var(--spacing-md);
+
+.map-placeholder.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
+
+
+.map-overlay {
+    width: 100%;
+    height: 100%;
+}
+
+
+.map-overlay iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
 
 .map-overlay p {
     font-size: 1.125rem;
@@ -2028,6 +2046,7 @@ section {
 
 @media (max-width: 600px) {
 
+    /* Make arrows smaller so everything fits */
     .testimonial-arrow {
         width: 22px;
         height: 22px;
@@ -2036,24 +2055,28 @@ section {
         font-size: 1rem;
     }
 
+    /* Reduce the gap so cards don’t push outward */
     .testimonial-carousel {
         gap: 4px;
     }
 
+    /* Let cards size more naturally */
     .testimonial-carousel .testimonial-card {
         min-width: 80%;
         max-width: 85%;
     }
 
+    /* Ensure the entire container fits on screen */
     .testimonial-carousel-container {
         gap: 4px;
     }
 }
 
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        top: 72px;
+        top: 48px;
         left: 0;
         right: 0;
         background-color: var(--color-bg);
@@ -2144,4 +2167,5 @@ section {
     .filter-btn {
         width: 100%;
     }
+	
 }
