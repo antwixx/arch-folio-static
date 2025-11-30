@@ -2026,6 +2026,29 @@ section {
     }
 }
 
+@media (max-width: 600px) {
+
+    .testimonial-arrow {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        min-height: 22px;
+        font-size: 1rem;
+    }
+
+    .testimonial-carousel {
+        gap: 4px;
+    }
+
+    .testimonial-carousel .testimonial-card {
+        min-width: 80%;
+        max-width: 85%;
+    }
+
+    .testimonial-carousel-container {
+        gap: 4px;
+    }
+}
 
 @media (max-width: 768px) {
     .nav-menu {
