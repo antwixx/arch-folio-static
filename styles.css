@@ -549,6 +549,10 @@ section {
     border-left: 3px solid var(--color-accent);
     /*opacity: 0;*/
     transform: translateY(30px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .testimonial-content p {
@@ -557,6 +561,8 @@ section {
     color: var(--color-text);
     margin-bottom: var(--spacing-md);
     font-style: italic;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .author-name {
@@ -2046,7 +2052,7 @@ section {
 
 @media (max-width: 600px) {
 
-    /* Make arrows smaller so everything fits */
+
     .testimonial-arrow {
         width: 22px;
         height: 22px;
@@ -2055,20 +2061,32 @@ section {
         font-size: 1rem;
     }
 
-    /* Reduce the gap so cards don’t push outward */
+
     .testimonial-carousel {
         gap: 4px;
+		overflow-y: hidden !important;
     }
 
-    /* Let cards size more naturally */
+
     .testimonial-carousel .testimonial-card {
         min-width: 80%;
         max-width: 85%;
     }
 
-    /* Ensure the entire container fits on screen */
+
     .testimonial-carousel-container {
         gap: 4px;
+    }
+	
+    .testimonial-card {
+        padding: var(--spacing-md);
+		max-height: none;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        
     }
 }
 
