@@ -2024,6 +2024,14 @@ section {
 
     .client-logo {
         height: 100px;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+	
+    .client-logo img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px;
     }
 
     .clients-description {
@@ -2042,6 +2050,13 @@ section {
 
     .client-logo {
         height: 100px;
+		max-width: calc(100% - 8px);
+    }
+	
+    .client-logo img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px;
     }
 
     .clients-description {
