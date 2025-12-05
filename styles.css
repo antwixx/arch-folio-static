@@ -60,6 +60,20 @@ img {
     display: block;
 }
 
+.highlight-link {
+    color: var(--color-text-muted);
+    font-weight: 400;
+    text-decoration: underline white;
+	background-color: white;
+	color: black;
+	padding: 2px 2px;
+    transition: color var(--transition-fast);
+}
+
+.highlight-link:hover {
+    color: grey;
+}
+
 .navbar {
     position: fixed;
     top: 0;
